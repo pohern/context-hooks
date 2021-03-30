@@ -1,6 +1,17 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 
+const ThemeToggle = () => {
+    const { toggleTheme} = useContext(ThemeContext)
+    return ( 
+            <button onClick={toggleTheme}>
+                Toggle Theme
+            </button>
+     );
+}
+ 
+export default ThemeToggle;
+
 // class ThemeToggle extends Component {
 //     static contextType = ThemeContext
 //     render() { 
@@ -13,13 +24,3 @@ import { ThemeContext } from '../contexts/ThemeContext';
 //     }
 // }
 // export default ThemeToggle;
-const ThemeToggle = () => {
-    const { toggleTheme} = useContext(ThemeContext)
-    return ( 
-            <button onClick={toggleTheme}>
-                Toggle Theme
-            </button>
-     );
-}
- 
-export default ThemeToggle;
