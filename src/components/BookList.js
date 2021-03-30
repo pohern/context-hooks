@@ -4,8 +4,8 @@ import { ThemeContext } from '../contexts/ThemeContext';
 class BookList extends Component {
     static contextType = ThemeContext
     render() { 
-        const { isLight, light, dark } = this.context
-        const theme = isLight ? light : dark
+        const { isLightTheme, light, dark } = this.context
+        const theme = isLightTheme ? light : dark
         return (
           <div
             className='book-list'
