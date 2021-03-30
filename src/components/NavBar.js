@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { ThemeContext } from '../contexts/ThemeContext';
 
 class NavBar extends Component {
+    static contextType = ThemeContext;
     render() { 
         return (
           <nav>
